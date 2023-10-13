@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900;
+  }
+
+  svg {
+    @apply fill-current;
+  }
+
+  img {
+    @apply select-none;
+  }
+}
+
+@layer utilities {
+  #app {
+    @apply relative mx-auto my-6 flex min-w-[300px] max-w-[calc(100%-48px)] flex-col gap-12 sm:my-8 sm:max-w-[592px] md:my-10  md:max-w-[720px] lg:my-12 lg:max-w-[976px];
+  }
+
+  header,
+  .footer-section {
+    @apply flex h-14 items-center justify-center;
+  }
+
+  header,
+  .today-card,
+  .weather-details,
+  .next-days-cards,
+  .favorites-data-cards {
+    @apply gap-6;
+  }
+
+  .menu-btn,
+  .search-location input,
+  .weather-informations,
+  .details,
+  .day-card,
+  .footer-section,
+  .favorite-data-card {
+    @apply rounded-xl;
+  }
+
+  .section-description {
+    @apply mb-12 select-none text-4xl text-white;
+  }
+
+  .details-title {
+    @apply text-gray-400;
+  }
+
+  .details-content {
+    @apply text-white;
+  }
+}
